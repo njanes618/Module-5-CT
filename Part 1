@@ -1,0 +1,32 @@
+PART 1
+PSEUDOCODE
+1.	Ask for the number of years.
+2.	Set total rainfall to 0.
+3.	Calculate total months as years * 12.
+4.	For each year (Show current year)
+5.	For each month (1 to 12):
+•	Ask for the rainfall in inches for that month.
+•	Add that rainfall to total rainfall.
+6.	Calculate average rainfall by dividing total rainfall by total months.
+7.	Display results:
+•	Total months
+•	Total rainfall in inches
+•	Average rainfall per month
+SOURCE CODE
+years = int(input("Enter the number of years: "))
+total_rainfall = 0
+total_months = years * 12
+for year in range(1, years + 1):
+    print(f"\nYear {year}")
+    for month in range(1, 13):
+        rainfall = float(input(f"Enter inches of rainfall for month {month}: "))
+        total_rainfall += rainfall
+average_rainfall = total_rainfall / total_months
+print("\nRESULTS")
+print(f"Total months: {total_months}")
+print(f"Total inches of rainfall: {total_rainfall:.2f}")
+print(f"Average rainfall per month: {average_rainfall:.2f} inches")
+
+
+
+
